@@ -2,6 +2,9 @@
 <html lang="uk">
 
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +16,14 @@
         <nav>
             <div class="logo">Вище за хмари</div>
             <div class="menu">
-                <a href="index.html">Головна</a>
-                <a href="#around-us">Відпочинок</a>
-                <a href="#contacts">Контакти</a>
+                <a class="a-menu" href="index.html">Головна</a>
+                <a class="a-menu" href="#around-us">Відпочинок</a>
+                <a class="a-menu" href="#contacts">Контакти</a>
             </div>
         </nav>
         <div class="header-title">
             <h1>Вище за хмари</h1>
             <p>Насолоджуйтеся природою і прекрасним відпочинком</p>
-            <img src="img/house-forest.png" alt="house">
         </div>
     </header>
     <main>
@@ -31,22 +33,22 @@
             </div>
             <div class="card-container">
                 <article class="card">
-                    <img src="img/view.jpg" alt="view">
+                    <img class="card-img" src="img/view.jpg" alt="view">
                     <h3>Наші краєвиди</h3>
                     <p>Незаймана природа</p>
                 </article>
-                <article>
-                    <img src="img/house.jpg" alt="winter-house">
-                    <h3>Будинок зі зрубу</h3>
+                <article class="card">
+                    <img class="card-img" src="img/house.jpg" alt="winter-house">
+                    <h3>Будинок зі зрубу в самому серці Карпат</h3>
                     <p>з екологічно чистої деревини</p>
                 </article>
-                <article>
-                    <img src="img/image_portfolio_water.jpg" alt="strech">
+                <article class="card">
+                    <img class="card-img" src="img/image_portfolio_water.jpg" alt="strech">
                     <h3>Джерельна вода з глибин Карпат</h3>
                     <p>Запорука здоров'я та сили</p>
                 </article>
-                <article>
-                    <img src="img/servis.jpg" alt="servis">
+                <article class="card">
+                    <img class="card-img" src="img/servis.jpg" alt="servis">
                     <h3>Відмінний сервіс</h3>
                     <p>Домашня кухня та затишні номери</p>
                 </article>
@@ -55,64 +57,95 @@
         <hr>
         <div class="response-user">
             <div class="response-header">
-                <h2>Відчуйте себе вдома</h2>
-                <p>в еко-котеджі в серці Карпат</p>
+                <h2>Відчуйте себе як вдома</h2>
+                <p class="subtitle">Про нас пишуть в інтернеті:</p>
             </div>
             <article class="response">
-                <img src="img/user.jpg" alt="user-image">
-                <h3>Відгук про нас</h3>
-                <p>“Чудове місце серед вершин Карпатських гір, де можна відпочити<br>
-                    від міської метушні та побути в обіймах незайманої природи наодинці <br>
-                    зі своїми думками, наодинці зі своїми рідними, насолоджуючись <br>
-                    кришталево чистим повітрям,дзюрчанням струмка та неймовірним зоряним небом.“<br></p>
-                <p>Нестор і Софія</p>
+                <div class="card">
+                    <img class="response-img" src="img/user.jpg" alt="user-image">
+                </div>
+                <div class="card">
+                    <p><i>“Чудове місце серед вершин Карпатських гір, де можна відпочити
+                        від міської метушні та побути в обіймах незайманої природи наодинці 
+                        зі своїми думками, наодинці зі своїми рідними, насолоджуючись 
+                        кришталево чистим повітрям,дзюрчанням струмка та неймовірним зоряним небом.“ Нестор і Софія</i></p>
+                        
+                        <p>
+                            <i>
+                        На котедж  мій вибір припав через балкона з видом на гори.
+                         Поки їхала в Верховину від Івано-Франківська, сто разів пошкодувала,
+                          що не вибрала що-небудь ближче, але коли дісталася до місця, зрозуміла - воно того варте! Місцем 
+                          і відпочинком залишилася задоволена. Дерев'яний будинок з усіма міськими зручностями дуже чистенький, 
+                        господарі привітні і ненав'язливі, приголомшлива природа і п'янкий повітря, від видів з вікна захоплює дух. </i> </p>
+                   
+                </div>
             </article>
         </div>
         <div class="slider">
-            <h2>Ласкаво просимо в гори</h2>
-            <p>Зачарують вас у будь-яку пору року</p>
+            <div class="slider-header">
+                <h2>Ласкаво просимо в гори</h2>
+                <p class="subtitle">Зачарують вас у будь-яку пору року</p>
+            </div>
             <img src="img/winter.jpg" alt="house-in-winter">
             <img src="img/winter1.jpg" alt="house-in-winter">
             <img src="img/vzhwinter1.png" alt="house-in-winter">
         </div>
         <section id="around-us">
-            <h2>Навколо нас</h2>
-            <article class="card-around">
-                <img src="img/chorn-hr.jpg" alt="mountains">
-                <h3>Чорногірський хребет</h3>
-                <p></p>
-            </article>
-            <article class="card-around">
-                <img src="img/sking.jpg" alt="sky-slopes">
-                <h3>Траси для горних лиж</h3>
-                <p></p>
-            </article>
-            <article class="card-around">
-                <img src="img/museum.jpg" alt="museum">
-                <h3>Музей вишиванки</h3>
-                <p></p>
-            </article>
+            <h2 class="around-header">Навколо нас</h2>
+            <div class="card-flex">
+                <article class="card">
+                    <img class="card-img" src="img/chorn-hr.jpg" alt="mountains">
+                    <h3 class="card-sub">Чорногірський хребет</h3>
+                    <p></p>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="img/sking.jpg" alt="sky-slopes">
+                    <h3 class="card-sub">Траси для гірських лиж</h3>
+                    <p></p>
+                </article>
+                <article class="card">
+                    <img class="card-img" src="img/museum.jpg" alt="museum">
+
+                    <h3 class="card-sub">Музей вишиванки</h3>
+                    <p></p>
+                </article>
+            </div>
         </section>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3401.3843137674453!2d24.78142888890285!3d48.16855385419903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1610036984368!5m2!1suk!2sua"
-            width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <h2 class="footer-header">З нетерпінням чекаємо на вас!</h2>
+        <p class="subtitle">с.Ільці, Верховинський р-н Івано-Франківська обл.<br> GPS: 40.713688, - 73.992750</p>
     </main>
     <footer>
-        <h2>З нетерпінням чекаємо на вас!</h2>
-        <p>с.Ільці, Верховинський р-н Івано-Франківська обл. GPS: 40.713688, - 73.992750</p>
         <div id="contacts">
-            <a href="">Зв’яжіться з нами</a>
-            <br>
-            <img style="height: 20px; width: 20px;" src="img/phone-alt-solid.svg" alt="phone">
-            <p>097-468-8-524</p>
-            <div class="icons-row">
-                <a href="https://www.booking.com/hotel/ua/vyshche-za-hmary.uk.html"><img
-                        style="height: 20px; width: 20px;" src="img/b.svg" alt="Booking"></a>
-                <a href="https://www.facebook.com/vyshchezakhmary/"><img style="height: 20px; width: 20px;"
-                        src="img/facebook-f-brands.svg" alt="Facebook"></a>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3641.6252152067914!2d24.781340076879673!3d48.16847077094324!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2sua!4v1610292944847!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="data-a-row">
+                <div class="data">
+                    <br>
+                    <div class="phone-row">
+                        <img style="height: 25px; width: 25px;" src="img/phone-alt-solid.svg" alt="phone">
+                        <div class="number">
+                            <p>097-468-8-524</p>
+                        </div>
+                    </div>
+
+                    <div class="icons-row">
+                        <a href="https://www.booking.com/hotel/ua/vyshche-za-hmary.uk.html"><img
+                                style="height: 35px; width: 35px;" src="img/b.svg" alt="Booking"></a>
+
+                        <a href="https://www.facebook.com/vyshchezakhmary/"><img style="height: 20px; width: 20px;"
+                                src="img/facebook-f-brands.svg" alt="Facebook"></a>
+                    </div>
+                </div>
+                <div class="footer-a">
+                    <a href="">Зв’яжіться з нами</a>
+                </div>
             </div>
         </div>
-        <img src="img/footern.jpg" alt="house-in-winter">
+        
     </footer>
 </body>
 
