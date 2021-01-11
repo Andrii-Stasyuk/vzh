@@ -12,23 +12,22 @@ header {
     background-image: url("../img/house-forest.png");
     background-size: cover;
     background-position: center;
-    min-height: 700px;
-    border: 5px solid black;
-    margin: 0 0 60px; 
+    height: 800px;
+    margin: 0 0 60px 0; 
 }
 nav {
-   margin: 40px;
-   width: auto;
+    margin: 0;
+    padding: 40px;
    height: 100px;
    display: flex;
    justify-content: space-between;
 }
 .menu {
+    font-size: 20px;
     width: 30%;
     display: flex;
     justify-content: space-around;
     font-weight: bold;
-    font-size: 16px;
     line-height: 150%;
     text-align: center;
 }
@@ -104,8 +103,7 @@ a{
 }
 .map{
     margin: 50px;
-    display: grid;
-    place-items: center;
+    justify-content: flex-start;
 }
 footer{
     background-image: url(../img/footern.jpg);
@@ -117,17 +115,10 @@ footer{
 }
 #contacts{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-}
-.data-a-row{
-    display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 .footer-a{
-    position: absolute;
-    left: 350px;
-    top: -171px;
     padding: 15px 25px;
     font-size: 2rem;
     line-height: 1.875;
@@ -139,14 +130,52 @@ footer{
     transition-property: border;
     transition-duration: 1s;
 }
+.data-icons{
+    margin-top: 40px;
+    margin-right: 200px;
+}
 .footer-a:hover{
     border: 3px solid white;
     box-shadow: 0 0 10px;
 }
-.phone-row{
-    display: flex;
-    justify-content: space-around;
-}
 .card-sub{
     text-align: center;
+}
+.fa-phone-alt{
+font-size: 30px;
+margin-bottom: 15px;
+}
+.description{
+    margin: 25px;
+}
+.facebook-color{
+    color: black;
+    margin: 35px;
+}
+.fa-facebook-f{
+    font-size: 30px;
+    margin: 10px 0 0;
+}
+.icons-row{
+    display: flex;
+    flex-direction: column;
+}
+.fa-viber{
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    color: blueviolet;
+}
+.fa-envelope{
+    font-size: 30px;
+    display: block;
+    margin: 20px 0 25px ;
+}
+.viber-color{
+    color: black;
+}
+.card-footer{
+    margin: 25px;
+    padding: 10px;
+    width: 500px;
+    height: 350px;   
 }
