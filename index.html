@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  -->
     <title>Вище за хмари</title>
 </head>
 
@@ -15,6 +17,8 @@
     <header>
         <nav>
             <div class="logo">Вище за хмари</div>
+            <label class="burger-icon" for="burger-menu">☰</label>
+            <input type="checkbox" id="burger-menu">
             <div class="menu">
                 <a class="a-menu" href="index.html">Головна</a>
                 <a class="a-menu" href="#around-us">Відпочинок</a>
@@ -29,7 +33,7 @@
     <main>
         <div class="container">
             <div class="portfolio-header">
-                <h2>Переваги відпочинку</h2>
+                <h2 class="font-h2">Переваги відпочинку</h2>
             </div>
             <div class="card-container">
                 <article class="card">
@@ -57,7 +61,7 @@
         <hr>
         <div class="response-user">
             <div class="response-header">
-                <h2>Відчуйте себе як вдома</h2>
+                <h2 class="font-h2">Відчуйте себе як вдома</h2>
                 <p class="subtitle">Про нас пишуть в інтернеті:</p>
             </div>
             <article class="response">
@@ -87,15 +91,33 @@
         </div>
         <div class="slider">
             <div class="slider-header">
-                <h2>Ласкаво просимо в гори</h2>
+                <h2 class="font-h2">Ласкаво просимо в гори</h2>
                 <p class="subtitle">Зачарують вас у будь-яку пору року</p>
             </div>
-            <img src="img/winter.jpg" alt="house-in-winter">
-            <img src="img/winter1.jpg" alt="house-in-winter">
-            <img src="img/vzhwinter1.png" alt="house-in-winter">
-        </div>
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/winter.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/winter1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/vzhwinter1.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+        </div> -->
         <section id="around-us">
-            <h2 class="around-header">Навколо нас</h2>
+            <h2 class="around-header font-h2">Навколо нас</h2>
             <div class="card-flex">
                 <article class="card">
                     <img class="card-img" src="img/chorn-hr.jpg" alt="mountains">
@@ -140,8 +162,11 @@
                             <a href="https://www.facebook.com/vyshchezakhmary/" target="blank"><i
                                     class="fab fa-facebook-f"><span
                                         class="description facebook-color"><b>Facebook</b></span></i></a>
-                            <a href="https://www.booking.com/hotel/ua/vyshche-za-hmary.uk.html" target="blank"><img
-                                    style="height: 125px; width: 125px;" src="img/booking.png" alt="Booking"></a>
+                             <div class="booking-row">
+                                  <a href="https://www.booking.com/hotel/ua/vyshche-za-hmary.uk.html" target="blank"><img
+                                    style="height: 35px; width: 35px;" src="img/booking-icon.png" alt="Booking"></a>
+                                   <p class="booking-p">Booking.com</p>
+                             </div>                   
                         </div>
                     </div>
                 </div>
