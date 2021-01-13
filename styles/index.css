@@ -1,10 +1,9 @@
-
 body {
     font-family: 'Montserrat',sans-serif;
     max-width: 1580px;
     margin: auto;
-
 }
+
 .font-h2 {
     font-size: 56px;
 }
@@ -33,9 +32,11 @@ header {
 header .menu {
     display: none;
 }
+
 .burger-icon {
     font-size: 2rem;
 }
+
 #burger-menu {
     display: none;
 }
@@ -43,14 +44,16 @@ header .menu {
 header input:checked ~ .menu {
     display: flex;
 }
+
 header .menu {
     flex-direction: column;
 }
- .menu {
+
+.menu {
     font-size: 20px;
     font-weight: bold;
     line-height: 150%;
-} 
+}
 
 .a-menu {
     text-decoration: none;
@@ -60,13 +63,14 @@ header .menu {
 a {
     text-decoration: none !important;
 }
+
 @media(min-width: 610px) {
-   header nav {
-    display: flex;
-    margin: 0;
-    padding: 40px;
-    justify-content: space-between;
-}
+    header nav {
+        display: flex;
+        margin: 0;
+        padding: 40px;
+        justify-content: space-between;
+    }
 
     .burger-icon {
         display: none;
@@ -85,14 +89,15 @@ a {
         line-height: 150%;
         transition-property: transform;
         transition-duration: 1.5s;
+    }
 
-}
-    header .menu a:hover{
+    header .menu a:hover {
         transform: scale(1.1);
-    }   
-        
+    }
+
     /*End media min 610 610  */
 }
+
 .header-title {
     font-weight: bold;
     font-size: 56px;
@@ -160,6 +165,7 @@ a {
     text-align: center;
     margin: 50px 0;
 }
+
 .slider {
     margin-bottom: 50px;
 }
@@ -268,18 +274,20 @@ footer {
     width: 500px;
     height: 350px;
 }
+
 .booking-row {
     display: flex;
     align-items: center;
 }
+
 .booking-p {
     font-size: 25px;
     margin-left: 20px;
 }
- /* @media(min-width:660px) {
+
+/* @media(min-width:660px) {
      .card-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
      }
 }  */
-
